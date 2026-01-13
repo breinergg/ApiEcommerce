@@ -144,3 +144,14 @@ C:\Users\GONCHO\Desktop\DotNET\ApiEcommerce\obj\Debug\net8.0\ApiEcommerce.genrun
 C:\Users\GONCHO\Desktop\DotNET\ApiEcommerce\obj\Debug\net8.0\ref\ApiEcommerce.dll
 C:\Users\GONCHO\Desktop\DotNET\ApiEcommerce\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\GONCHO\Desktop\DotNET\ApiEcommerce\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\GONCHO\Desktop\DotNET\ApiEcommerce\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\GONCHO\Desktop\DotNET\ApiEcommerce\bin\Debug\net8.0\API-Ecommerce.postman_collection.json
+C:\Users\GONCHO\Desktop\DotNET\ApiEcommerce\bin\Debug\net8.0\Asp.Versioning.Abstractions.dll
+C:\Users\GONCHO\Desktop\DotNET\ApiEcommerce\bin\Debug\net8.0\Asp.Versioning.Http.dll
+C:\Users\GONCHO\Desktop\DotNET\ApiEcommerce\bin\Debug\net8.0\Asp.Versioning.Mvc.dll
+C:\Users\GONCHO\Desktop\DotNET\ApiEcommerce\bin\Debug\net8.0\Asp.Versioning.Mvc.ApiExplorer.dll
+C:\Users\GONCHO\Desktop\DotNET\ApiEcommerce\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\GONCHO\Desktop\DotNET\ApiEcommerce\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\GONCHO\Desktop\DotNET\ApiEcommerce\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\GONCHO\Desktop\DotNET\ApiEcommerce\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\GONCHO\Desktop\DotNET\ApiEcommerce\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll

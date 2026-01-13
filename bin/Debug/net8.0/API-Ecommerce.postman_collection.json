@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "cfcc6a88-4448-4ec4-930c-b0537bf8da69",
+		"name": "API-Ecommerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "51146903",
+		"_collection_link": "https://breinergg-7948884.postman.co/workspace/.net-back-api~1677134e-db2f-4874-bfdd-f3cc94133e05/collection/51146903-cfcc6a88-4448-4ec4-930c-b0537bf8da69?action=share&source=collection_link&creator=51146903"
+	},
+	"item": [
+		{
+			"name": "Categorias",
+			"item": [
+				{
+					"name": "Lista de Categorias",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5234/api/Categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Categories"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "Creacion de Usuarios",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"bgm-2025\",\r\n  \"name\": \"breiner\",\r\n  \"password\": \"12345\",\r\n  \"role\": \"Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5234/api/User",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"User"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Acceso de usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"bgm-2025\",\r\n  \"password\": \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5234/api/User/Login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"User",
+								"Login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
