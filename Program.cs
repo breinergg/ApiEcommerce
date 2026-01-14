@@ -1,5 +1,6 @@
 using System.Text;
 using ApiEcommerce.Constants;
+using ApiEcommerce.Data;
 using ApiEcommerce.Models;
 using ApiEcommerce.Repository;
 using ApiEcommerce.Repository.IRepository;
@@ -16,9 +17,14 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 var dbConnectionString = builder.Configuration.GetConnectionString("ConexionSql");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-{
-  options.UseSqlServer(dbConnectionString);
-});
+  options.UseSqlServer(dbConnectionString)
+  .UseSeeding((context, _) =>
+  {
+    var appContext = (ApplicationDbContext)context;
+    DataSeeder.SeedData(appContext);
+  })
+
+);
 
 builder.Services.AddResponseCaching(options =>
 {
@@ -30,7 +36,9 @@ builder.Services.AddResponseCaching(options =>
 builder.Services.AddScoped<ICategoryRepository,CategoryRepository>();
 builder.Services.AddScoped<IProductRepository,ProductRepository>();
 builder.Services.AddScoped<IUserRepository,UserRepository>();
-builder.Services.AddAutoMapper(typeof(Program).Assembly);
+
+// Registrar configuración de Mapster
+ApiEcommerce.Mapping.MapsterConfig.RegisterMappings();
 
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
 .AddEntityFrameworkStores<ApplicationDbContext>()

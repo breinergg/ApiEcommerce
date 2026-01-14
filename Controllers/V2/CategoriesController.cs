@@ -1,8 +1,8 @@
+using Mapster;
 using ApiEcommerce.Constants;
 using ApiEcommerce.Models.Dtos;
 using ApiEcommerce.Repository.IRepository;
 using Asp.Versioning;
-using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
@@ -20,11 +20,9 @@ namespace ApiEcommerce.Controllers.V2
     public class CategoriesController : ControllerBase
     {
         private readonly ICategoryRepository _categoryRepository;
-        private readonly IMapper _mapper;
-        public CategoriesController(ICategoryRepository categoryRepository, IMapper mapper)
+        public CategoriesController(ICategoryRepository categoryRepository)
         {
             _categoryRepository = categoryRepository;
-            _mapper = mapper;
         }
         
         [AllowAnonymous]
@@ -34,11 +32,7 @@ namespace ApiEcommerce.Controllers.V2
         public IActionResult GetCategoriesOrderById()
         {
             var categories = _categoryRepository.GetCategories().OrderBy(cat => cat.Id);
-            var categoriesDto = new List<CategoryDto>();
-            foreach (var category in categories)
-            {
-                categoriesDto.Add(_mapper.Map<CategoryDto>(category));
-            }
+            var categoriesDto = categories.Adapt<List<CategoryDto>>();
             return Ok(categoriesDto);
         }
 
@@ -59,7 +53,7 @@ namespace ApiEcommerce.Controllers.V2
             {
                 return NotFound($"La categoria con el id {id} no existe");
             }
-            var categoryDto = _mapper.Map<CategoryDto>(category);
+            var categoryDto = category.Adapt<CategoryDto>();
             return Ok(categoryDto);
         }
 
@@ -80,7 +74,7 @@ namespace ApiEcommerce.Controllers.V2
                 ModelState.AddModelError("CustomError", "La categoría ya existe");
                 return BadRequest(ModelState);
             }
-            var category = _mapper.Map<Category>(createCategoryDto);
+            var category = createCategoryDto.Adapt<Category>();
             if (!_categoryRepository.CreateCategory(category))
             {
                 ModelState.AddModelError("CustomError",$"Algo salio mal al guardar el registro {category.Name}");
@@ -112,11 +106,11 @@ namespace ApiEcommerce.Controllers.V2
                 return BadRequest(ModelState);
             }
 
-            var category = _mapper.Map<Category>(updateCategoryDto);
+            var category = updateCategoryDto.Adapt<Category>();
             category.Id = id;
             if (!_categoryRepository.UpdateCategory(category))
             {
-                ModelState.AddModelError("CustomError",$"Algo salió mal al actualizar el registro {category.Name}");
+                ModelState.AddModelError("CustomError",$"Algo sali mal al actualizar el registro {category.Name}");
                 return StatusCode(500,ModelState);
             }
 
