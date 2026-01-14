@@ -1,11 +1,39 @@
 {
   "Version": 1,
-  "Hash": "vjRw7597cIXBKWjHJFdaxWQWnR/TKJ2v/RxzNAvejv8=",
+  "Hash": "PAHeVPE6sWL9WV1Rmpxqi3nbW7zbRHUE7A0ty5X7PU8=",
   "Source": "ApiEcommerce",
   "BasePath": "_content/ApiEcommerce",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "ApiEcommerce\\wwwroot",
+      "Source": "ApiEcommerce",
+      "ContentRoot": "C:\\Users\\GONCHO\\Desktop\\DotNET\\ApiEcommerce\\wwwroot\\",
+      "BasePath": "_content/ApiEcommerce",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\GONCHO\\Desktop\\DotNET\\ApiEcommerce\\wwwroot\\ProductsImages\\0c6df4cc5-72c2-4655-8614-737399836fa2.jpg",
+      "SourceId": "ApiEcommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\GONCHO\\Desktop\\DotNET\\ApiEcommerce\\wwwroot\\",
+      "BasePath": "_content/ApiEcommerce",
+      "RelativePath": "ProductsImages/0c6df4cc5-72c2-4655-8614-737399836fa2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProductsImages\\0c6df4cc5-72c2-4655-8614-737399836fa2.jpg"
+    }
+  ]
 }

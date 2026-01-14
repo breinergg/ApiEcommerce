@@ -155,3 +155,4 @@ C:\Users\GONCHO\Desktop\DotNET\ApiEcommerce\bin\Debug\net8.0\Microsoft.AspNetCor
 C:\Users\GONCHO\Desktop\DotNET\ApiEcommerce\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\GONCHO\Desktop\DotNET\ApiEcommerce\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\GONCHO\Desktop\DotNET\ApiEcommerce\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\GONCHO\Desktop\DotNET\ApiEcommerce\bin\Debug\net8.0\ApiEcommerce.staticwebassets.runtime.json
