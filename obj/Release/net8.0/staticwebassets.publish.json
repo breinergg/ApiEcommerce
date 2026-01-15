@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "G9xrr4DySa9nvwjQWbzCQ/obMNIUEFFCfvjlQrFeb/U=",
+  "Source": "ApiEcommerce",
+  "BasePath": "_content/ApiEcommerce",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ApiEcommerce\\wwwroot",
+      "Source": "ApiEcommerce",
+      "ContentRoot": "C:\\Users\\GONCHO\\Desktop\\DotNET\\ApiEcommerce\\wwwroot\\",
+      "BasePath": "_content/ApiEcommerce",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\GONCHO\\Desktop\\DotNET\\ApiEcommerce\\wwwroot\\ProductsImages\\0c6df4cc5-72c2-4655-8614-737399836fa2.jpg",
+      "SourceId": "ApiEcommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\GONCHO\\Desktop\\DotNET\\ApiEcommerce\\wwwroot\\",
+      "BasePath": "_content/ApiEcommerce",
+      "RelativePath": "ProductsImages/0c6df4cc5-72c2-4655-8614-737399836fa2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProductsImages\\0c6df4cc5-72c2-4655-8614-737399836fa2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\GONCHO\\Desktop\\DotNET\\ApiEcommerce\\wwwroot\\ProductsImages\\2002e411162d-45ab-4f5e-8b26-fe7c576034e9.jpg",
+      "SourceId": "ApiEcommerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\GONCHO\\Desktop\\DotNET\\ApiEcommerce\\wwwroot\\",
+      "BasePath": "_content/ApiEcommerce",
+      "RelativePath": "ProductsImages/2002e411162d-45ab-4f5e-8b26-fe7c576034e9.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProductsImages\\2002e411162d-45ab-4f5e-8b26-fe7c576034e9.jpg"
+    }
+  ]
+}
